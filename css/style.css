@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+}
+body .wrap {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .wrap img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+body .wrap .por {
+  position: relative;
+}
+body .wrap .poa {
+  position: absolute;
+}
+body .wrap .s1 .cv_btn {
+  bottom: 2.5%;
+  right: 0;
+  left: 0;
+  animation: cv 2s infinite;
+  text-align: center;
+}
+body .wrap .s1 .cv_btn img {
+  width: 95%;
+}
+@keyframes cv {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+body .wrap .s5 .flow {
+  top: 30%;
+  right: 0;
+  left: 0;
+}
+body .wrap .s5 .flow .swiper-slide {
+  text-align: center;
+}
+body .wrap .s5 .flow .swiper-slide img {
+  width: 80%;
+}
+body .wrap .s5 .flow .swiper-button-next:after, body .wrap .s5 .flow .swiper-button-prev:after {
+  content: "";
+}
+body .wrap .s5 .flow .swiper-button-prev {
+  left: 5%;
+}
+body .wrap .s5 .flow .swiper-button-next {
+  right: 5%;
+}
+body .wrap .s6 .back_btn01 {
+  bottom: 17.8%;
+  right: 0;
+  left: 0;
+  animation: cv 2s infinite;
+  text-align: center;
+}
+body .wrap .s6 .back_btn01 img {
+  width: 80%;
+}
+body .wrap .s6 .back_btn02 {
+  bottom: 4.4%;
+  right: 0;
+  left: 0;
+  animation: cv 2s infinite;
+  text-align: center;
+}
+body .wrap .s6 .back_btn02 img {
+  width: 80%;
+}
+body .wrap .s7 .accordion {
+  padding: 10% 7%;
+}
+body .wrap .s7 .accordion .option {
+  position: relative;
+  margin-bottom: 3em;
+  text-align: center;
+}
+body .wrap .s7 .accordion .option img {
+  width: 100%;
+}
+body .wrap .s7 .accordion .option .toggle {
+  display: none;
+}
+body .wrap .s7 .accordion .option .title,
+body .wrap .s7 .accordion .option .content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+body .wrap .s7 .accordion .option .title {
+  display: block;
+  background: linear-gradient(to right, #ffa2dd, #ff67af);
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 40px;
+}
+body .wrap .s7 .accordion .option .title:after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+body .wrap .s7 .accordion .option .title:before {
+  content: "";
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+@media (max-width: 750px) {
+  body .wrap .s7 .accordion .option .title:after {
+    width: 3vw;
+    height: 2px;
+  }
+  body .wrap .s7 .accordion .option .title:before {
+    width: 2px;
+    height: 3vw;
+    right: 6.5%;
+  }
+}
+body .wrap .s7 .accordion .option .content {
+  max-height: 0;
+  overflow: hidden;
+}
+body .wrap .s7 .accordion .option .content .content_wrap {
+  border-right: solid 3px #000;
+  border-left: solid 3px #000;
+  border-bottom: solid 3px #000;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+body .wrap .s7 .accordion .option .content .store-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+body .wrap .s7 .accordion .option .content .store-region {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-grow: auto;
+  width: 3em;
+  max-width: 56px;
+  line-height: 1.2;
+  background: #ffe4f2;
+  font-size: 2em;
+  writing-mode: vertical-rl;
+  padding: 2em 0 1em;
+  color: #373737;
+  text-align: center;
+}
+body .wrap .s7 .accordion .option .content .store-body:nth-of-type(n + 2) {
+  border-top: 3px solid #000;
+}
+body .wrap .s7 .accordion .option .content .store-body:last-child .store-region {
+  border-bottom-left-radius: 25px;
+}
+body .wrap .s7 .accordion .option .content .store-box {
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+body .wrap .s7 .accordion .option .content .store-desc {
+  text-align: left;
+  line-height: 1.4;
+  padding: 1.3em 2em 1.8em;
+  color: #373737;
+}
+body .wrap .s7 .accordion .option .content .store-desc:nth-of-type(n + 2) {
+  border-top: 1px solid #d89294;
+}
+body .wrap .s7 .accordion .option .content .store-block_title {
+  display: inline;
+  font-size: 2.3em;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  border-bottom: solid 2px #000;
+}
+body .wrap .s7 .accordion .option .content .store-block_title small {
+  line-height: 1;
+}
+body .wrap .s7 .accordion .option .content .store-block_tel {
+  font-size: 1.273em;
+  font-weight: bold;
+  margin: 0.6em 0 0;
+  display: none;
+}
+body .wrap .s7 .accordion .option .content .store-block_address {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0.6em 0 0;
+  letter-spacing: 0.05em;
+}
+body .wrap .s7 .accordion .option .content .store-block_route {
+  font-size: 1em;
+  margin: 0;
+  padding: 1em 0 0;
+}
+body .wrap .s7 .accordion .option .content .store-block_route a {
+  color: blue;
+  text-decoration: underline;
+}
+body .wrap .s7 .accordion .option .content .store-block_link {
+  margin-top: 1.2em;
+}
+body .wrap .s7 .accordion .option .content .store-block_link a:hover {
+  background-color: #d89294;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+body .wrap .s7 .accordion .option .toggle:checked + .title {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+body .wrap .s7 .accordion .option .toggle:checked + .title + .content {
+  max-height: 20000px;
+  transition: all 1.5s;
+}
+body .wrap .s7 .accordion .option .toggle:checked + .title::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+@media (max-width: 750px) {
+  body .wrap .s7 .accordion .option {
+    margin-bottom: 10%;
+  }
+}
+body .wrap .floating {
+  position: fixed;
+  bottom: -3%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+}
+body .wrap .floating img {
+  max-width: 750px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
