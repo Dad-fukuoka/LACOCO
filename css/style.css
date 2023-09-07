@@ -366,11 +366,11 @@ body .wrap .s7 .accordion .option .toggle:checked + .title::before {
 }
 @media (max-width: 750px) {
   body .wrap .s7 .accordion .option {
-    margin-bottom: 10%;
+    margin-bottom: 7%;
   }
   body .wrap .s7 .accordion .option .title {
     font-size: 5vw;
-    padding: 3%;
+    padding: 5%;
   }
 }
 body .wrap .floating {
